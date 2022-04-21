@@ -222,19 +222,19 @@ h6 {
 .full-price {
   margin-top: 40px;
 }
-.foto-conteiner {
+.photo-conteiner {
   margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
   gap: 1%;
   position: relative;
 }
-.foto-img:nth-child(1n + 4) {
+.photo-img:nth-child(1n + 4) {
 margin-top: 1%;
 }
-.foto-img {
+.photo-img {
   width: 32%;
 }
-.foto {
+.photo {
   width: 100%;
 }
