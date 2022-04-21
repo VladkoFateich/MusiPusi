@@ -119,8 +119,10 @@ h6 {
   color: #ffffff;
   text-align: center;
 }
-.nav-link {
+.nav-link,
+.stock-title {
   color: #ffffff;
+  text-transform: uppercase;
 }
 .form-button {
   font-family: "Roboto-Bold";
@@ -175,13 +177,12 @@ h6 {
   margin: auto;
   text-align: center;
 }
-.service-price, 
-.foto {
+.service-price
+{
   text-align: center;
   align-items: center;
-  padding: 150px 20%  20px 20%;
+  padding: 150px 20% 20px 20%;
   justify-content: center;
-  
 }
 .service-title {
   font-size: 42px;
@@ -191,18 +192,18 @@ h6 {
   font-size: 24px;
   padding-top: 25px;
   padding-bottom: 60px;
-} 
+}
 .service-conteiner {
-display: flex;
-flex-wrap: wrap;
-text-align: start;
-justify-content: space-between;
-gap: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: start;
+  justify-content: space-between;
+  gap: 2%;
 }
 .service-box {
   width: 48%;
 }
-.service-box:nth-child(1n+3) {
+.service-box:nth-child(1n + 3) {
   margin-top: 1%;
 }
 .title-price {
@@ -221,6 +222,19 @@ gap: 2%;
 .full-price {
   margin-top: 40px;
 }
+.foto-conteiner {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  position: relative;
+}
+.foto-img:nth-child(1n + 4) {
+margin-top: 1%;
+}
+.foto-img {
+  width: 32%;
+}
 .foto {
-width: 30%;
+  width: 100%;
 }
