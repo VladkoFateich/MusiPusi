@@ -108,7 +108,8 @@ h6 {
   justify-content: space-between;
   padding: 3px 3%;
 }
-.header-logo {
+.header-logo,
+.footer-logo {
   max-width: 18%;
 }
 .main {
@@ -120,7 +121,8 @@ h6 {
   text-align: center;
 }
 .nav-link,
-.stock-title {
+.stock-title,
+.streaming-title {
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -131,6 +133,10 @@ h6 {
 .record-button {
   padding: 10px 25px;
   border-radius: 20px;
+}
+.record-button:hover,
+.record-button:active {
+  background-color:#c7c4c4 ;
 }
 .banner {
   background-image: url(../image/background.jpg);
@@ -219,11 +225,16 @@ h6 {
   border: solid 3px #000;
   padding: 10px 30px;
 }
+.price-button:hover,
+.price-button:active {
+  background-color:#c7c4c4 ;
+}
 .full-price {
   margin-top: 40px;
 }
 .photo-conteiner {
   margin-top: 80px;
+  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 1%;
@@ -233,8 +244,48 @@ h6 {
 margin-top: 1%;
 }
 .photo-img {
-  width: 32%;
+  width: calc((100% - 2%) / 3);
 }
 .photo {
   width: 100%;
+}
+.streaming {
+  width: 40%;
+  margin: auto;
+  background-color: #000;
+  padding: 20px 30px;
+}
+.footer {
+  padding-top: 200px;
+  background-color: #000;
+  text-align: center;
+}
+.number, 
+.post-address,
+.contacts-text,
+.address-coment,
+.we {
+  font-family: "Roboto-Regular";
+  font-size: 18px;
+  color: #b8b7b7;
+}
+.contacts-text {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.post {
+  margin-bottom: 30px;
+}
+.we {
+  font-family: "Roboto-Bold";
+  font-size: 24px;
+}
+.telephon {
+  margin-top: 25px;
+}
+.address-coment {
+  line-height: 2;
+} 
+.vk {
+  width: 70px;
 }
