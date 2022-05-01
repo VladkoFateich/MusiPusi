@@ -126,6 +126,10 @@ h6 {
   color: #ffffff;
   text-transform: uppercase;
 }
+.price-link,
+.record {
+  color: #000;
+}
 .form-button {
   font-family: "Roboto-Bold";
   font-size: 20px;
@@ -136,10 +140,11 @@ h6 {
 }
 .record-button:hover,
 .record-button:active {
-  background-color:#c7c4c4 ;
+  background-color: #c7c4c4;
 }
 .banner {
   background-image: url(../image/background.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -183,8 +188,7 @@ h6 {
   margin: auto;
   text-align: center;
 }
-.service-price
-{
+.service-price {
   text-align: center;
   align-items: center;
   padding: 150px 20% 20px 20%;
@@ -227,7 +231,7 @@ h6 {
 }
 .price-button:hover,
 .price-button:active {
-  background-color:#c7c4c4 ;
+  background-color: #c7c4c4;
 }
 .full-price {
   margin-top: 40px;
@@ -241,13 +245,21 @@ h6 {
   position: relative;
 }
 .photo-img:nth-child(1n + 4) {
-margin-top: 1%;
+  margin-top: 1%;
 }
 .photo-img {
   width: calc((100% - 2%) / 3);
 }
+/* .photo-img:hover {
+  width: 70%;
+  margin: auto;
+  z-index: 10;
+}  */
 .photo {
   width: 100%;
+}
+.photo:hover {
+  transform: scale(1.5);
 }
 .streaming {
   width: 40%;
@@ -356,18 +368,18 @@ input[name="r"] {
   margin-left: -85.8%;
 }
 .slide-text {
-    width: 100%;
+  width: 100%;
 }
 .footer {
   padding-top: 200px;
   background-color: #000;
   text-align: center;
 }
-.number, 
+.number,
 .post-address,
 .contacts-text,
 .address-coment,
-.we, 
+.we,
 .slide-text {
   font-family: "Roboto-Regular";
   font-size: 18px;
@@ -389,7 +401,30 @@ input[name="r"] {
 }
 .address-coment {
   line-height: 2;
-} 
+}
 .vk {
   width: 70px;
+}
+.right {
+  background-color: #4f4f4f;
+  text-align: center;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  
+}
+.text-right {
+  width: 100%;
+  font-family: "Roboto-Regular";
+  color: #ffffff;
+  font-size: 16px;
+  margin: auto;
+}
+.up {
+  width: 50px;
+  margin-left: auto;
+}
+.up-link {
+  color: #000;
+  font-family: 'Roboto-Regular';
 }

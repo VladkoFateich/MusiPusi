@@ -11,22 +11,23 @@
 
 <body>
   <div class="page">
-    <div class="header">
+    <div id="head" class="header">
       <div class="logo-main">
         <div class="header-logo">
           <img class='logo-image' src="icon/logo.png" alt="Логотип Муси пуси" width="100%" />
         </div>
         <nav class="header-main">
           <ul class="main">
-            <li class="list header-list"><a class="link nav-link" href="#0">Онлайн трансляция</a></li>
-            <li class="list header-list"><a class="link nav-link" href="#0">Прайс</a></li>
-            <li class="list header-list"><a class="link nav-link" href="#0">Фото</a></li>
-            <li class="list header-list"><a class="link nav-link" href="#0">Отзывы</a></li>
-            <li class="list header-list"><a class="link nav-link" href="#0">Контакты</a></li>
+            <li class="list header-list"><a class="link nav-link" href="#stream">Онлайн трансляция</a></li>
+            <li class="list header-list"><a class="link nav-link" href="#price-list">Прайс</a></li>
+            <li class="list header-list"><a class="link nav-link" href="#photos">Фото</a></li>
+            <li class="list header-list"><a class="link nav-link" href="#review">Отзывы</a></li>
+            <li class="list header-list"><a class="link nav-link" href="#contact">Контакты</a></li>
           </ul>
         </nav>
         <form class="form-button">
-          <button class="button record-button">Онлайн запись</button>
+          <button class="button record-button"> <a class="link record" href="https://dikidi.net/634611?p=2.pi-po-ss&o=2">Онлайн
+              запись</a></button>
         </form>
       </div>
       <div class="banner">
@@ -40,7 +41,7 @@
       </div>
     </div>
     <div class="content">
-      <main class="service-price">
+      <main id="price-list" class="service-price">
         <h3 class="title service-title">Наши услуги</h3>
         <div class="subtitle">более 500 довольных хвостиков и их хозяев</div>
         <section class="service-container">
@@ -110,9 +111,10 @@
           </div>
         </section>
         <form class="form-button full-price">
-          <button class="button price-button">Полный прайс</button>
+          <button class="button price-button"> <a class="link price-link"
+              href="https://dikidi.net/634611?p=2.pi-po-ss&o=2">Полный прайс</a></button>
         </form>
-        <section class="photo-conteiner">
+        <section id="photos" class="photo-conteiner">
           <div class="photo-img"><img class="photo" src="image/Angri cat.jpg" alt="фото результата работы"></div>
           <div class="photo-img"><img class="photo" src="image/British cat.jpg" alt="фото результата работы"></div>
           <div class="photo-img"><img class="photo" src="image/Dog 2.jpg" alt="фото результата работы"></div>
@@ -129,7 +131,7 @@
           <div class="photo-img"><img class="photo" src="image/wool.jpg" alt="фото результата работы"></div>
           <div class="photo-img"><img class="photo" src="image/Red wool.jpg" alt="фото результата работы"></div>
         </section>
-        <section class="online-streaming">
+        <section id="stream" class="online-streaming">
           <div class="streaming">
             <h4 class="title streaming-title">Онлайн трансляция</h4>
           </div>
@@ -140,7 +142,7 @@
 
           </div>
         </section>
-        <section class="reviews">
+        <section id="review" class="reviews">
           <h3 class="title slider-title">Отзывы наших любимых клиентов</h3>
           <div class="slider">
             <div class="slides">
@@ -211,7 +213,7 @@
                       source">Источник: 2-GIS</p>
               </div>
             </div>
-            <div  class="slider-navigation">
+            <div class="slider-navigation">
               <label for="r1" class="bar"></label>
               <label for="r2" class="bar"></label>
               <label for="r3" class="bar"></label>
@@ -219,7 +221,7 @@
               <label for="r5" class="bar"></label>
               <label for="r6" class="bar"></label>
               <label for="r7" class="bar"></label>
-          </div>
+            </div>
           </div>
     </div>
     </section>
@@ -227,7 +229,7 @@
   </div>
   <div class="footer">
     <div class="contacts">
-      <img class="footer-logo" src="icon/logo.png" alt="Логотип Муси пуси" />
+      <img id="contact" class="footer-logo" src="icon/logo.png" alt="Логотип Муси пуси" />
     </div>
     <div class="telephon"><a class="tel" href="tel:+79068754659">
         <span class="number">+7 906 875 46 59</span></a></div>
@@ -239,10 +241,17 @@
     <p class="address-coment"> <span class="we">Мы находимся:</span> <br>
       ул. Вьюжная, 8 (вход со двора)<br>
       г. Тюмень</p>
-    <div class="social-link"><a href="#0"><img class="vk" src="icon/VK white.png" alt="В контакте"></a></div>
+    <div class="social-link"><a href="https://vk.com/musipusi_groom"><img class="vk" src="icon/VK white.png"
+          alt="В контакте"></a></div>
   </div>
-  <div class="map"></div>
-  <div class="right"></div>
+  <div class="map">
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A71205fc492d13a66cbfb17f9ebf5bbe3652e55061168a6c0cd1d9b67477362d3&amp;width=100%25&amp;height=463&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+  <div class="right">
+    <div class="text text-right">© 2022 MusiPusi groom<br> работаем с 2017 года</div>
+    <div class="up"><a class="up-link" href="#head">Вверх &#8593</a></div>
+  </div>
   </div>
 </body>
 
