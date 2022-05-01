@@ -509,4 +509,7 @@ input[name="r"] {
   .photo-img {
     width: 100%;
   }
+  .record-button {
+    padding: 5px 5px;
+  }
 }
