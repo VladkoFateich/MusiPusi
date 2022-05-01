@@ -463,7 +463,7 @@ input[name="r"] {
     position: relative;
     width: 23px;
     height: 19px;
-    margin-left: 40%;
+    margin-left: 35%;
   }
   .burger::before,
   .burger::after {
@@ -487,6 +487,10 @@ input[name="r"] {
     height: 3px;
     top: 8px;
   }
+  .header-title,
+  .stock-title {
+    font-size: 10vw;
+  }
   .service-price {
     padding: 50px 5% 20px 5%;
   }
@@ -494,6 +498,10 @@ input[name="r"] {
   .photo-conteiner {
     flex-direction: column;
     gap: 2vw;
+  }
+  .logo-image,
+  .footer-logo {
+    width: 30vw;
   }
   .service-box {
     width: 100%;
