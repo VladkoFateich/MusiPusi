@@ -452,6 +452,9 @@ input[name="r"] {
   margin: auto;
   margin-top: 1%;
 }
+.photo:hover {
+  transform: scale(1.1);
+}
 }
 
 @media (max-width: 640px) and (orientation: portrait) {
@@ -499,6 +502,9 @@ input[name="r"] {
     flex-direction: column;
     gap: 2vw;
   }
+  .photo:hover {
+    transform: scale(1.1);
+  }
   .logo-image,
   .footer-logo {
     width: 30vw;
@@ -510,6 +516,6 @@ input[name="r"] {
     width: 100%;
   }
   .record-button {
-    padding: 5px 5px;
+    padding: 5px;
   }
 }
