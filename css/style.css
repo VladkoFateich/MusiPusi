@@ -107,6 +107,8 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 3px 3%;
+  position: fixed;
+  z-index: 50;
 }
 .header-logo,
 .footer-logo {
@@ -249,11 +251,7 @@ h6 {
 .photo-img {
   width: calc((100% - 2%) / 3);
 }
-/* .photo-img:hover {
-  width: 70%;
-  margin: auto;
-  z-index: 10;
-}  */
+
 .photo {
   width: 100%;
 }
@@ -429,7 +427,7 @@ input[name="r"] {
   font-family: 'Roboto-Regular';
 }
 
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
 .main {
   font-size: 1.5vw;
 }
@@ -457,7 +455,7 @@ input[name="r"] {
 }
 }
 
-@media (max-width: 640px) and (orientation: portrait) {
+@media (max-width: 767px) and (orientation: portrait) {
   .header-main {
     display: none;
   }
