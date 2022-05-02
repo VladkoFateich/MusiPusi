@@ -503,7 +503,7 @@ input[name="r"] {
     gap: 2vw;
   }
   .photo:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
   }
   .logo-image,
   .footer-logo {
@@ -517,5 +517,13 @@ input[name="r"] {
   }
   .record-button {
     padding: 5px;
+  }
+  .cam-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+  }
+  .cam {
+    width: 100%;
   }
 }
