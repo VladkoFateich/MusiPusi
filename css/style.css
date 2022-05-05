@@ -124,6 +124,7 @@ h6 {
   font-size: 20px;
   color: #ffffff;
   text-align: center;
+  align-items: center;
 }
 .nav-link,
 .stock-title,
@@ -298,6 +299,7 @@ h6 {
 }
 .slider-title {
   font-size: 42px;
+  margin-top: 40px;
 }
 .title-autor {
   margin-top: 20px;
@@ -311,7 +313,6 @@ h6 {
 }
 .slides {
   margin-top: 50px;
-  background-color: #4f4f4f;
   width: 700%;
   height: 200px;
   display: flex;
@@ -343,7 +344,7 @@ input[name="r"] {
   visibility: hidden;
 }
 .slide {
-  width: 100%;
+  width: calc(100% / 7);
   transition: all 0.6s ease;
 }
 #r1:checked ~ .s1 {
@@ -384,6 +385,9 @@ input[name="r"] {
   font-family: "Roboto-Regular";
   font-size: 18px;
   color: #b8b7b7;
+}
+.slide-text {
+  color: rgb(49, 49, 49);
 }
 .contacts-text {
   margin-top: 15px;
