@@ -102,6 +102,8 @@ h6 {
   width: 100%;
 }
 .logo-main {
+  width: 100%;
+  height: 120px;
   background-color: #4f4f4f;
   display: flex;
   align-items: center;
@@ -110,9 +112,12 @@ h6 {
   position: fixed;
   z-index: 50;
 }
+.header-content {
+max-width: 1660px;
+}
 .header-logo,
 .footer-logo {
-  max-width: 15%;
+  max-width: 240px;
 }
 .header-main {
   margin: auto;
@@ -434,7 +439,7 @@ input[name="r"] {
   font-family: 'Roboto-Regular';
 }  */
 
-@media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) , (orientation: portrait) {
 .main {
   font-size: 1.5vw;
 }
