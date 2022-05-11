@@ -208,12 +208,23 @@ max-width: 1660px;
   max-width: 1660px;
   margin: auto;
   text-align: center;
+  padding-top: 50px;
 }
+.online-streaming,
+.photo-container,
+.reviews,
+.online-streaming
+{
+  padding-top: 95px;
+  margin-top: -95px;
+}
+
 .service-price {
   text-align: center;
   align-items: center;
-  padding: 50px 20% 20px 20%;
+  padding: 90px 20% 20px 20%;
   justify-content: center;
+  margin-top: -90px;
 }
 .service-title {
   font-size: 42px;
@@ -256,9 +267,9 @@ max-width: 1660px;
 }
 .full-price {
   margin-top: 40px;
+  margin-bottom: 60px;
 }
 .photo-container {
-  margin-top: 80px;
   margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
