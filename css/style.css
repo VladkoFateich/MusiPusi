@@ -101,15 +101,20 @@ h6 {
 .header {
   width: 100%;
 }
-.logo-main {
+.header-box {
   width: 100%;
-  height: 120px;
+  max-height: 100px;
   background-color: #4f4f4f;
+  position: fixed;
+  z-index: 30;
+}
+.logo-main {
+  margin: auto;
+  max-width: 1660px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1px 3%;
-  position: fixed;
+  padding: 0 3%;
   z-index: 50;
 }
 .header-content {
@@ -117,7 +122,7 @@ max-width: 1660px;
 }
 .header-logo,
 .footer-logo {
-  max-width: 240px;
+  max-width: 200px;
 }
 .header-main {
   margin: auto;
@@ -136,6 +141,9 @@ max-width: 1660px;
 .streaming-title {
   color: #ffffff;
   text-transform: uppercase;
+}
+.streaming-title {
+  text-align: center;
 }
 .price-link,
 .link-record {
@@ -268,7 +276,7 @@ max-width: 1660px;
   transform: scale(1.5);
 }
 .streaming {
-  width: 40%;
+  width: 50%;
   margin: auto;
   background-color: #000;
   padding: 20px 30px;
@@ -433,14 +441,6 @@ input[name="r"] {
   font-size: 16px;
   margin-left: 8%;
 }
-/* .up {
-  width: 10%;
-  margin-left: auto;
-} */
-/* .up-link {
-  color: #000;
-  font-family: 'Roboto-Regular';
-}  */
 
 @media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) , (orientation: portrait) {
 .main {
@@ -493,7 +493,7 @@ input[name="r"] {
   top: -100%;
   left: 0;
   width: 100%;
-  height: 32%;
+  /* height: 32%; */
   background-color: #4f4f4f;
   padding: 90px 0 0 0;
   transition: all 0.3s ease 0s;
@@ -523,7 +523,7 @@ input[name="r"] {
     transform: scale(0);
   }
   .record {
-    margin-left: 50%;
+    margin-left: 35%;
     margin-right: 15px;
     z-index: 3;
   }
@@ -716,6 +716,9 @@ input[name="r"] {
   .record-button {
     padding: 5px;
   }
+  .cam-text::before {
+     margin-top: -85px;
+}
   .cam-container {
   display: flex;
   flex-direction: column;
