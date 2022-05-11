@@ -83,6 +83,9 @@ h6 {
 
 /*Стили обнулены!*/
 
+html {
+  scroll-behavior: smooth;
+}
 @font-face {
   font-family: "Roboto-Regular";
   src: url(../font/Roboto-Regular.ttf);
