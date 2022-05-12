@@ -106,7 +106,7 @@ html {
 }
 .header-box {
   width: 100%;
-  max-height: 100px;
+  height: 100px;
   background-color: #4f4f4f;
   position: fixed;
   z-index: 30;
@@ -114,18 +114,16 @@ html {
 .logo-main {
   margin: auto;
   max-width: 1660px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 3%;
   z-index: 50;
 }
-.header-content {
-max-width: 1660px;
-}
 .header-logo,
 .footer-logo {
-  max-width: 200px;
+  width: 200px;
 }
 .header-main {
   margin: auto;
@@ -213,8 +211,7 @@ max-width: 1660px;
 .online-streaming,
 .photo-container,
 .reviews,
-.online-streaming
-{
+.online-streaming {
   padding-top: 95px;
   margin-top: -95px;
 }
@@ -222,9 +219,9 @@ max-width: 1660px;
 .service-price {
   text-align: center;
   align-items: center;
-  padding: 90px 20% 20px 20%;
+  padding: 95px 20% 20px 20%;
   justify-content: center;
-  margin-top: -90px;
+  margin-top: -95px;
 }
 .service-title {
   font-size: 42px;
@@ -446,7 +443,6 @@ input[name="r"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .text-right {
   width: 100%;
@@ -456,38 +452,42 @@ input[name="r"] {
   margin-left: 8%;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape) , (orientation: portrait) {
-.main {
-  font-size: 1.5vw;
-}
-.service-price {
-  padding: 50px 5% 20px 5%;
-}
-.service, 
-.price,
-.service-info {
-  font-size: 2vw;
-}
-.service-container {
-  gap: 3%;
-}
-.photo-img {
-  width: calc(99%/2);
-}
-.photo-img:nth-child(1n + 3) {
-  margin-top: 1%;
-}
-.photo-img:nth-child(15) {
-  margin: auto;
-  margin-top: 1%;
-}
-.photo:hover {
-  transform: scale(1.2);
-}
+@media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape),
+  (orientation: portrait) {
+  .main {
+    font-size: 1.5vw;
+  }
+  .service-price {
+    padding: 95px 5% 20px 5%;
+  }
+  .service,
+  .price,
+  .service-info {
+    font-size: 2vw;
+  }
+  .service-container {
+    gap: 3%;
+  }
+  .photo-img {
+    width: calc(99% / 2);
+  }
+  .photo-img:nth-child(1n + 3) {
+    margin-top: 1%;
+  }
+  .photo-img:nth-child(15) {
+    margin: auto;
+    margin-top: 1%;
+  }
+  .photo:hover {
+    transform: scale(1.2);
+  }
 }
 @media (max-width: 767px) and (orientation: portrait) {
   body.lock {
     overflow: hidden;
+  }
+  .header-box {
+    height: 60px;
   }
   .logo-main {
     width: 100%;
@@ -501,17 +501,16 @@ input[name="r"] {
     height: 100%;
     background-color: #4f4f4f;
     z-index: 2;
-    }
+  }
   .header-main {
-  position: fixed;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  /* height: 32%; */
-  background-color: #4f4f4f;
-  padding: 90px 0 0 0;
-  transition: all 0.3s ease 0s;
-  overflow: auto;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: #4f4f4f;
+    padding: 90px 0 0 0;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
   }
   .header-main.active {
     top: 0;
@@ -533,7 +532,7 @@ input[name="r"] {
     z-index: 3;
     transition: all 0.3s ease 0s;
   }
-  .burger.active span{
+  .burger.active span {
     transform: scale(0);
   }
   .record {
@@ -572,14 +571,17 @@ input[name="r"] {
     height: 3px;
     top: 8px;
   }
+  .nav-link {
+    font-size: 1rem;
+  }
   .header-title,
   .stock-title {
     font-size: 10vw;
   }
   .service-price {
-    padding: 50px 5% 20px 5%;
+    padding: 0 5% 20px 5%;
   }
-  .service-container, 
+  .service-container,
   .photo-container {
     flex-direction: column;
     gap: 2vw;
@@ -589,10 +591,7 @@ input[name="r"] {
   }
   .header-logo {
     z-index: 3;
-  }
-  .logo-image,
-  .footer-logo {
-    width: 30vw;
+    width: 150px;
   }
   .service-box {
     width: 100%;
@@ -600,17 +599,29 @@ input[name="r"] {
   .photo-img {
     width: 100%;
   }
+  .service, .price, .service-info {
+    font-size: 4vw;
+  }
   .record-button {
     padding: 5px;
   }
   .cam-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .cam {
     width: 100%;
   }
+  .online-streaming,
+  .photo-container,
+  .reviews,
+  .online-streaming,
+  .service-price,
+  .contacts {
+  padding-top: 200px;
+  margin-top: -200px;
+}
 }
 @media (max-width: 767px) and (orientation: landscape) {
   body.lock {
@@ -618,7 +629,6 @@ input[name="r"] {
   }
   .logo-main {
     width: 100%;
-    height: 80px;
   }
   .logo-main:before {
     content: "";
@@ -629,17 +639,17 @@ input[name="r"] {
     height: 100%;
     background-color: #4f4f4f;
     z-index: 2;
-    }
+  }
   .header-main {
-  position: fixed;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  height: 45%;
-  background-color: #4f4f4f;
-  padding: 100px 0 0 0;
-  transition: all 0.3s ease 0s;
-  overflow: auto;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 45%;
+    background-color: #4f4f4f;
+    padding: 100px 0 0 0;
+    transition: all 0.3s ease 0s;
+    overflow: auto;
   }
   .header-main.active {
     top: 0;
@@ -661,7 +671,7 @@ input[name="r"] {
     z-index: 3;
     transition: all 0.3s ease 0s;
   }
-  .burger.active span{
+  .burger.active span {
     transform: scale(0);
   }
   .record {
@@ -704,9 +714,9 @@ input[name="r"] {
     font-size: 10vw;
   }
   .service-price {
-    padding: 50px 5% 20px 5%;
+    padding: 95px 5% 20px 5%;
   }
-  .service-container, 
+  .service-container,
   .photo-container {
     flex-direction: column;
     gap: 2vw;
@@ -731,12 +741,12 @@ input[name="r"] {
     padding: 5px;
   }
   .cam-text::before {
-     margin-top: -85px;
-}
+    margin-top: -85px;
+  }
   .cam-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .cam {
     width: 100%;
