@@ -143,6 +143,7 @@ html {
   color: #ffffff;
   text-transform: uppercase;
 }
+
 .streaming-title {
   text-align: center;
 }
@@ -172,6 +173,7 @@ html {
   color: #ffffff;
   position: relative;
   z-index: 0;
+  padding-bottom: 250px;
 }
 .banner::after {
   content: "";
@@ -212,8 +214,8 @@ html {
 .photo-container,
 .reviews,
 .online-streaming {
-  padding-top: 95px;
-  margin-top: -95px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 
 .service-price {
@@ -264,7 +266,7 @@ html {
 }
 .full-price {
   margin-top: 40px;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 .photo-container {
   margin-bottom: 30px;
@@ -449,7 +451,6 @@ input[name="r"] {
   font-family: "Roboto-Regular";
   color: #ffffff;
   font-size: 16px;
-  margin-left: 8%;
 }
 
 @media (min-width: 768px) and (max-width: 1200px) and (orientation: landscape),
@@ -619,8 +620,8 @@ input[name="r"] {
   .online-streaming,
   .service-price,
   .contacts {
-  padding-top: 200px;
-  margin-top: -200px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 }
 @media (max-width: 767px) and (orientation: landscape) {
